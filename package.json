@@ -6,9 +6,15 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.18.5",
+    "axios": "^0.25.0",
+    "pubsub-js": "^1.9.4",
     "react": "^17.0.2",
+    "react-dark-photo": "^1.0.26",
     "react-dom": "^17.0.2",
+    "react-medium-image-zoom": "^4.3.5",
     "react-scripts": "5.0.0",
+    "react-zmage": "^0.8.5-beta.37",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
