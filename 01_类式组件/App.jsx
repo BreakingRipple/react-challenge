@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import List from './containers/list'
+import Search from './components/search';
+import List from './components/List';
 
 export default class App extends Component {
 
@@ -8,7 +9,7 @@ export default class App extends Component {
         allPhotos: [],
         errorMsg: ''
     }
-    
+
     componentDidMount() {
         axios.get(`https://jsonplaceholder.typicode.com/photos`).then(
             response => {
@@ -22,9 +23,11 @@ export default class App extends Component {
     }
 
     render() {
+        console.log(this.state)
         return (
             <div>
-                <List {...this.state}/>
+                <Search {...this.state}/>
+                <List />
             </div>
         )
     }
